@@ -19,6 +19,7 @@
         <a href="cart.html" title="cart page">
           <img class="cart_img" alt="cart icon" src="images/cart.png"/>
         </a>
+        <p id="shoppingcartlen">3</p>
         <a href="help.html" title="help page">
           <img class="help_img" alt="help icon" src="images/help.png"/>
         </a>
@@ -59,7 +60,9 @@
           <button class="minus_button" type="button"><span>-</span></button>
           <button class="counter_button"><span>1</span></button>
           <button class="plus_button" type="button"><span>+</span></button>
-          <button class="addtocart_button" type="button"><span>Add to Cart</span></button>
+          <button class="addtocart_button" type="button" onclick="add()" ><span>Add to Cart</span></button>
+
+          <p id="shoppingcart"></p>
 
           <br><br><br><hr>
           <h2>Comments</h2>
