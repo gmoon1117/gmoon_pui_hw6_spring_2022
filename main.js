@@ -5,12 +5,12 @@ var len = 3;
 // add function when users press "add to cart"
 function add_to_cart() {
   var name = document.getElementById("product_name").innerHTML
-  // var x = ????
-  // for (var i=0; i<x; i++) {
-  //   a.push(name);
-  // }
+  var x = document.getElementById("counter_count").value
+  for (var i=0; i<x; i++) {
+    a.push(name);
+  }
 
-  a.push(name);
+  //a.push(name);
   //document.getElementById("shoppingcart").innerHTML = a;
   len = a.length;
   document.getElementById("shoppingcartlen").innerHTML = len;
