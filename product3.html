@@ -48,19 +48,28 @@
           <img class="mini_img" alt="mini first product picture" src="images/pp3.png"/>
         </div>
         <div class="column">
-          <h1>Roselle Tea Eye Gel Patch</h1>
+          <h1 id="product_name">Roselle Tea Eye Gel Patch</h1>
           <h4>JAYJUN</h4>
 
           <p>Restore your under eyes with JayJun's Roselle Tea Hydrogel Eye Patches. The hibiscus flower extract brightens the eyes by evening out the skin tone while calming and firming the skin.</p>
           <h3>$9.99</h3>
-          <p>Type: Roselle</p>
-          <img class="flavor_choice" id ="Roselle" alt="mini first product picture" src="images/pp2.png" onclick="switch()"/>
-          <img class="flavor_choice" id="GreenTea" alt="mini first product picture" src="images/p2p1.png" onclick="switch()"/>
+          <p id="type">Type: </p><p id="flavor">Roselle</p>
+          <img class="flavor_choice" id ="Roselle" alt="mini first product picture" src="images/pp2.png" onclick="switch_image(1)"/>
+          <img class="flavor_choice" id="GreenTea" alt="mini first product picture" src="images/p2p1.png" onclick="switch_image(2)"/>
           <br><br>
-          <button class="minus_button" type="button"><span>-</span></button>
-          <button class="counter_button"><span>1</span></button>
-          <button class="plus_button" type="button"><span>+</span></button>
-          <button class="addtocart_button" type="button" onclick="add()" ><span>Add to Cart</span></button>
+
+          <!-- <button class="minus_button" type="button" onclick="minus_quantity()"><span>-</span></button>
+          <button class="counter_button" id="count_quantity"><span>1</span></button>
+          <button class="plus_button" type="button" onclick="add_quantity()"><span>+</span></button> -->
+
+          <div class="counter">
+            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+            <input type="text" value="1">
+            <span class="up" onClick='increaseCount(event, this)'>+</span>
+          </div>
+          <br><br><br>
+
+          <button class="addtocart_button" type="button" onclick="add_to_cart()" ><span>Add to Cart</span></button>
 
           <!-- displaying whats in cart -->
           <p id="shoppingcart"></p>
