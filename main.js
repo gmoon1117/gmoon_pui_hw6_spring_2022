@@ -9,13 +9,13 @@ function add_to_cart() {
   for (var i=0; i<x; i++) {
     a.push(name);
   }
-
   //a.push(name);
   //document.getElementById("shoppingcart").innerHTML = a;
   len = a.length;
   document.getElementById("shoppingcartlen").innerHTML = len;
 }
 
+// switches image when flavor/type is changed
 function switch_image(x) {
   // current main product image
  var Image_Id = document.getElementById('product3_image');
@@ -31,6 +31,8 @@ function switch_image(x) {
  }
 }
 
+// functions for quantity counter
+// referenced from https://dev.to/stackfindover/products-quantity-counter-using-html-css-javascript-663
 function increaseCount(a, b) {
   var input = b.previousElementSibling;
   var value = parseInt(input.value, 10);
