@@ -1,5 +1,5 @@
 //variables
-var a = ["Teatree Care Solution", "Soft Foot Peeling Socks", "Roselle Tea Eye Gel Patch"];
+var a = ["Teatree Care Solution", "Soft Foot Peeling Socks", "Tea Eye Gel Patch"];
 var len = 3;
 
 // add function when users press "add to cart"
